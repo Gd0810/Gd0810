@@ -1,1 +1,46 @@
+name: Generate Languages SVG
+
+on:
+  push:
+    paths:
+      - '.github/workflows/generate-langs.yml'
+  schedule:
+    - cron: '0 3 * * 1' # weekly on Monday at 03:00 UTC (change if you want)
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Install requirements
+        run: python -m pip install --upgrade pip requests
+
+      - name: Generate aggregated languages SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USERNAME: gd0810
+        run: |
+          python scripts/generate_langs.py
+
+      - name: Commit generated SVG if changed
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          if git status --porcelain | grep -q 'languages.svg'; then
+            git add languages.svg
+            git commit -m "chore: update languages.svg (automated)"
+            git push
+          else
+            echo "No changes to languages.svg"
+          fi
 
