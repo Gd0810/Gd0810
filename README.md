@@ -7,7 +7,7 @@
   </a> 
 </p>
 
-- 🔭 I’m currently working on [Chtbot](https://github.com/Gd0810/chatbot.git)
+- 🔭 I’m currently working on [Chatbot](https://github.com/Gd0810/chatbot.git)
 
 - 🌱 I’m currently learning **AI / LLM, AI Automation**
 
@@ -52,12 +52,6 @@
 
 ---
 
-
-
-### 📊 Most Used Languages (All Public Repos)
-<p align="center">
-  <img src="languages.svg" alt="Most used languages" />
-</p>
 
 ---
 
