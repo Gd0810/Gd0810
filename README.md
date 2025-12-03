@@ -53,13 +53,10 @@
 ---
 
 
-### 📊 Most Used Languages
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=gd0810&show_icons=true&theme=tokyonight" />
+  <img src="https://img.shields.io/github/languages/top/gd0810/chatbot?style=for-the-badge" alt="Top language" />
 </p>
-
-
-
 
 
 ---
