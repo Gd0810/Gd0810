@@ -54,10 +54,10 @@
 
 
 
+### 📊 Most Used Languages (All Public Repos)
 <p align="center">
-  <img src="https://img.shields.io/github/languages/top/gd0810/chatbot?style=for-the-badge" alt="Top language" />
+  <img src="languages.svg" alt="Most used languages" />
 </p>
-
 
 ---
 
