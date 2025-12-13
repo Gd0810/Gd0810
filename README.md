@@ -27,4 +27,4 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=gd0810&show_icons=true&locale=en" alt="gd0810" /></p> -->
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=gd0810&" alt="gd0810" /></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=gd0810&theme=tokyonight" alt="gd0810" /></p>
